@@ -29,7 +29,6 @@
   <link rel="stylesheet" type="text/css" href="semantic/components/popup.css">
   <link rel="stylesheet" type="text/css" href="semantic/components/modal.css">
   <link rel="stylesheet" type="text/css" href="semantic/components/dimmer.css">
-  <link rel="stylesheet" type="text/css" href="css/animate.css">
   <link rel="stylesheet" type="text/css" href="css/custom.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -39,9 +38,7 @@
   <script src="semantic/components/popup.js"></script>
   <script src="semantic/components/modal.js"></script>
 	<script src="semantic/components/dimmer.js"></script>  
-	<script src="js/textillate.js"></script>
-	<script src="js/lettering.js"></script>
-  <script src="js/custom.js"></script>
+	<script src="js/custom.js"></script>
   <!-- google analytics -->
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -52,17 +49,17 @@
   ga('create', 'UA-72792729-1', 'auto');
   ga('send', 'pageview');
 
-</script>
+</script>	
 </head>
 <body>
 
 	<!-- Following Menu -->
 	<div class="ui huge top fixed hidden menu following">
 	  <div class="ui container">
-	    <a class="active item tabbed about-tab" href="index.html">About</a>
-	    <a class="item tabbed research-tab" href="research.html">Research</a>
-	    <a class="item tabbed participate-tab" href="participate.html">Participate</a>
-	    <a class="item tabbed about-tab" href="discoveries.html">Discoveries</a>
+	    <a class="item tabbed about-tab" href="index.html">About</a>
+      <a class="item tabbed research-tab" href="research.html">Research</a>
+      <a class="item tabbed participate-tab" href="participate.html">Participate</a>
+      <a class="item active tabbed about-tab" href="discoveries.html">Discoveries</a>
 	    <a class="item tabbed publications-tab" href="publications.html">Publications</a>
 <!-- 	    <a class="item tabbed newsletter-tab">Newsletter</a>
 			<a class="item tabbed links-tab">Links</a>     -->
@@ -72,10 +69,10 @@
 
 	<!-- Sidebar Menu -->
 	<div class="ui vertical inverted sidebar menu">
-    <a class="active item tabbed about-tab" href="index.html">About</a>
+    <a class="item tabbed about-tab" href="about.html">About</a>
     <a class="item tabbed research-tab" href="research.html">Research</a>
     <a class="item tabbed participate-tab" href="participate.html">Participate</a>
-    <a class="item tabbed about-tab" href="discoveries.html">Discoveries</a>
+    <a class="item tabbed active about-tab" href="discoveries.html">Discoveries</a>
     <a class="item tabbed publications-tab" href="publications.html">Publications</a>
 <!--     <a class="item tabbed newsletter-tab">Newsletter</a>
 		<a class="item tabbed links-tab">Links</a>    --> 
@@ -84,69 +81,48 @@
 
 
 	<!-- Page Contents -->
-	<div class="pusher">
+	<div class="pusher" style="background-color: #FEFFFA">
 
-		<div class='content about-tab-content'>
-		  <div class="ui inverted vertical masthead center aligned segment blue">
-
-		    <div class="ui container">
-		      <div class="ui huge secondary inverted pointing menu top-secondary" style="border: none">
+			<div class='content publications-tab-content'>
+			  <div class="ui container">
+		      <div class="ui huge secondary pointing menu plain-menu masthead pointing" style= "border: none">
 		        <a class="toc item">
 		          <i class="sidebar icon"></i>
 		        </a>
-					    <a class="active item tabbed about-tab" href="index.html">About</a>
-					    <a class="item tabbed research-tab" href="research.html">Research</a>
-					    <a class="item tabbed participate-tab" href="participate.html">Participate</a>
-					    <a class="item tabbed about-tab" href="discoveries.html">Discoveries</a>
-					    <a class="item tabbed publications-tab" href="publications.html">Publications</a>
-	<!-- 				    <a class="item tabbed newsletter-tab">Newsletter</a> -->
-	<!-- 						<a class="item tabbed links-tab">Useful Links</a> -->    
-							<a class="item tabbed resources-tab" href="resources.html">Scientist Resources</a>	
+				    <a class="item tabbed about-tab" href="index.html">About</a>
+            <a class="item tabbed research-tab" href="research.html">Research</a>
+            <a class="item tabbed participate-tab" href="participate.html">Participate</a>
+            <a class="item tabbed active about-tab" href="discoveries.html">Discoveries</a>
+				    <a class="item tabbed publications-tab" href="publications.html">Publications</a>
+<!-- 				    <a class="item tabbed newsletter-tab">Newsletter</a> -->
+<!-- 						<a class="item tabbed links-tab">Useful Links</a> -->    
+						<a class="item tabbed resources-tab" href="resources.html">Scientist Resources</a>		
 		      </div>
 		    </div>
 
-		    <div class="ui text container">
-		      <h1 class="ui inverted header">
-		        The Multiple Sclerosis Genetics Project
-		      </h1>
-		      <h2 class='unravel'>Decoding the genetic risks of Multiple Sclerosis</h2>
-		      <div>
-		      	<button class="ui huge inverted button join-study">Join the Study!</button>
-		      </div>
-		    </div> <!-- end of text container  -->
-		  </div> <!-- end of masthead -->
+			  <div class="ui vertical stripe">
+			    <div class="ui middle aligned stackable grid container centered">
+			      <div class="ui grid">
+				      <div class='sixteen wide column'>
+			      		<h1 class="ui header">What We Know</h1>
+                <img class="ui large image rounded centered" src="images/sandler.jpg">
+			      		<!-- <img class="ui large image rounded centered" src="images/books.jpg"> -->
+                <br>
+			      		<p style="text-align: justify">Multiple sclerosis is the most common cause of non-traumatic neurological disability in young adults, affecting approximately 2.3 million people worldwide and more than 400,000 individuals in the US.</p>
 
-		  <div class="ui vertical stripe segment">
-		    <div class="ui middle aligned stackable grid container">
-		      <div class="row">
-		        <div class="eight wide column">
-		          <h3 class="ui header">Our Mission</h3>
-		          <p>The goal of the MS Genetics Group at UCSF is to fully understand the genetic causes of multiple sclerosis (MS) and to apply the fundamental knowledge that we acquire to improve our capacity to prevent, diagnose, and treat the disease.</p>
-		          <h3 class="ui header">Who We Are </h3>
-		          
-		          <p>The Multiple Sclerosis Genetic Susceptibility Project is a multi-center research study dedicated to finding the genetic factors underlying the development of MS and affecting disease progression. The project was established in 1989 and builds on the effort of scientists and staff with synergistic skills and demonstrated commitment to this effort. The principles of cooperation, dedication, and innovation have been conducive to the growth of the group and its scientific productivity.</p>
-		        </div>
-		        <div class="eight wide right floated column">
-		          <img class="ui fluid image rounded" src="images/msgroup.jpg">
-		        </div>
-		      </div>
-		    </div>
-		  </div>
+                <p style="text-align: justify"> In the last two decades MS related research has become one of the most productive areas of clinical neuroscience and has delivered remarkable progress on multiple fronts, including the identification of multiple DNA variants determining inherited risk, the deconstruction of the immunology underlying focal inflammatory demyelination, the unprecedented resolution of central nervous system imaging, and most notably, the development of an extensive repertoire of therapeutic agents capable of suppressing the relapsing aspects of disease.</p>
 
-		  <div class="ui vertical stripe segment">
-		    <div class="ui text container">
-		      <h3 class="ui header">Patient Participation</h3>
-		      <p>Our research depends on the support and participation of individuals diagnosed with MS and their family members, spouses, and friends. We maintain a unique repository of DNA and other biological materials that together, constitute a resource of great importance in promoting studies on genetic susceptibility and development of biomarkers in MS.</p>
+                <p style="text-align: justify">Due primarily to highly coordinated international efforts, the genetic underpinnings responsible for MS susceptibility have now been substantially clarified. There are, however, significant questions that remain to be answered to maximize the value of genetic research in MS, including the role of genetics in determining the clinical trajectory of the disease or the favorable response to treatment.</p>
 
-					<p>If you or someone in your family is interested in participating in this study or would like to receive more information, please click the button below, or contact our Study Clinical Coordinator at 1(866) 674-3637.</p>
-					<div class='ui column centered grid'>
-		      	<a class="ui huge blue button join-study">Participate</a>
-		      </div>
-		    </div>
-		  </div>
-		</div> <!-- end of about content  -->
+                <p style="text-align: justify">To address these questions we build recent extraordinary developments in understanding the human genome, but more important, we relay on the cooperation of thousands of altruistic individuals who donate their blood to these experiments. The demonstration of even a modest functional effect of a known gene or group of genes on the course of MS has great potential to elucidate fundamental disease mechanisms that drive neurodegeneration and yield novel prognostic and therapeutic opportunities for progressive MS, the major unmet need in the field. 
+                </p>
+              </div>
+			      </div>
+			    </div>
+			  </div>
+			</div> <!-- end of publications -->
 
-	</div> <!-- end of pusher -->
+		</div> <!-- end of pusher -->
 
 
   <div class="ui inverted vertical footer segment">
@@ -165,7 +141,7 @@
 					  <a class='item' href="http://neurology.ucsf.edu/">UCSF Department of Neurology</a>
 					  <a class='item' href="http://multiplesclerosis.ucsf.edu/">UCSF Multiple Sclerosis Clinical Center</a>
 					  <a class='item' href="http://www.nmss.org">National Multiple Sclerosis Society</a>
-					  <a class='item' href="http://neurology.ucsf.edu/research/ms-bioscreen">MS Bioscreen</a>
+            <a class='item' href="http://neurology.ucsf.edu/research/ms-bioscreen">MS Bioscreen</a>
 					</div>
         </div>
 	    </div>

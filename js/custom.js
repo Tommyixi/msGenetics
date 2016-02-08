@@ -15,7 +15,7 @@ $(document)
     ;
 
     $(function () {
-      $('.unravel').textillate();
+      $('.unravel').textillate({in: {effect: 'tada'}});
     })
 
     // create sidebar and attach to menu open
