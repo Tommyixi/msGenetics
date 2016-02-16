@@ -64,8 +64,8 @@
 .bulleted .item, h4{
   font-size: 1.33em;
 }
-h4 {
-
+.one-point-two-five{
+  font-size: 1.25em;
 }
 
 @media only screen and (max-width: 700px) {
