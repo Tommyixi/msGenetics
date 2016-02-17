@@ -14,10 +14,6 @@ $(document)
       })
     ;
 
-    $(function () {
-      $('.unravel').textillate({in: {effect: 'tada'}});
-    })
-
     // create sidebar and attach to menu open
     $('.ui.sidebar')
       .sidebar('attach events', '.toc.item')
@@ -70,7 +66,7 @@ $(document)
     $('.research-link').click(function(e){
       e.preventDefault()
       $('html, body').animate({
-        scrollTop: $("#" + this.classList[1]).offset().top
+        scrollTop: $("#" + this.classList[1]).offset().top - 80
         },1000 );
     })
 
