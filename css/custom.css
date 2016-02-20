@@ -72,6 +72,16 @@
   margin-bottom: 8em !important;
 }
 
+.Collage {
+  padding: 10px;
+}
+
+.Collage img {
+  vertical-align: bottom;
+  opacity: 0;
+  max-width: 100%
+}
+
 @media only screen and (max-width: 700px) {
   .ui.fixed.menu {
     display: none !important;

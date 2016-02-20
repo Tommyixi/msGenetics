@@ -1,6 +1,18 @@
+$(window).load(function () {
+    // window.resizeTo(window.width, window.height);
+    $('.Collage').removeWhitespace().collagePlus();
+});
+
+
+$(window).resize(function(){
+  $(".Collage img").css("opacity", "0");
+  $('.Collage').removeWhitespace().collagePlus();
+
+})
+
+
 $(document)
   .ready(function() {
-
     // fix menu when passed
     $('.masthead')
       .visibility({
@@ -71,3 +83,4 @@ $(document)
     })
 
   });
+
