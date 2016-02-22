@@ -1,19 +1,21 @@
-$(window).load(function () {
-    // window.resizeTo(window.width, window.height);
-    $('.Collage').removeWhitespace().collagePlus();
-});
+spinner = new Spinner().spin()
+
+$(window).bind("load", function(){
+  spinner.stop();
+})
 
 
 $(window).resize(function(){
   $(".Collage img").css("opacity", "0");
   $('.Collage').removeWhitespace().collagePlus();
-
 })
 
 
 $(document)
   .ready(function() {
-    // fix menu when passed
+    $('.Collage').removeWhitespace().collagePlus()
+    var target = document.getElementById("spinner")
+    target.appendChild(spinner.el)    
     $('.masthead')
       .visibility({
         once: false,

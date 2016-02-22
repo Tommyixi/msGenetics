@@ -67,6 +67,7 @@
             settings.images.each(
                 function(index){
 
+
                     /*
                      *
                      * Cache selector
@@ -175,7 +176,6 @@
                     }
                 }
             );
-
         });
 
         function resizeRow( obj, row, settings, rownum) {
@@ -230,6 +230,7 @@
                 if(settings.allowPartialLastRow === true && lastRow === true){
                    fw = obj[i][1];
                    fh = obj[i][2];
+
                 }
 
 
@@ -348,11 +349,8 @@
 
         }
 
-
-
-
-
         }
+
 
         /*
          *
@@ -375,6 +373,7 @@
                 };
 
             return $obj.css(css);
+
         }
 
 
@@ -391,6 +390,7 @@
             params["w"] = (parseFloat($img.css("border-left-width")) + parseFloat($img.css("border-right-width")));
             params["h"] = (parseFloat($img.css("border-top-width")) + parseFloat($img.css("border-bottom-width")));
             return params;
+            
         }
 
     };
@@ -409,7 +409,9 @@
         'direction'             : 'vertical',
         // Sometimes there is just one image on the last row and it gets blown up to a huge size to fit the
         // parent div width. To stop this behaviour, set this to true
-        'allowPartialLastRow'   : false
+        'allowPartialLastRow'   : false,
+
+        'callback' : true
     };
 
 })( jQuery );
