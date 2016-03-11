@@ -1,88 +1,59 @@
-spinner = new Spinner().spin()
+$(document).ready(function() {
+  // create sidebar and attach to menu open
+  $('.ui.sidebar')
+    .sidebar('attach events', '.toc.item')
+  ;
 
-$(window).bind("load", function(){
-  spinner.stop();
-})
+  $(".show-enrollment-case").click(function(e){
+    e.preventDefault();
+    $('.ui.modal.case-control').modal('show');    
+  })
 
+  $(".show-enrollment-multi").click(function(e){
+    e.preventDefault();
+    $('.ui.modal.case-multi').modal('show');    
+  })    
 
-$(window).resize(function(){
-  $(".Collage img").css("opacity", "0");
-  $('.Collage').removeWhitespace().collagePlus();
-})
+  $(".show-enrollment-african").click(function(e){
+    e.preventDefault();
+    $('.ui.modal.case-african').modal('show');    
+  })   
 
+  $(".show-enrollment-genes").click(function(e){
+    e.preventDefault();
+    $('.ui.modal.case-genes').modal('show');    
+  })   
 
-$(document)
-  .ready(function() {
-    $('.Collage').removeWhitespace().collagePlus()
-    var target = document.getElementById("spinner")
-    target.appendChild(spinner.el)    
-    $('.masthead')
-      .visibility({
-        once: false,
-        onBottomPassed: function() {
-          $('.fixed.menu').transition('fade in');
-        },
-        onBottomPassedReverse: function() {
-          $('.fixed.menu').transition('fade out');
-        }
-      })
-    ;
+  $(".show-enrollment-pediatric").click(function(e){
+    e.preventDefault();
+    $('.ui.modal.case-pediatric').modal('show');    
+  })   
 
-    // create sidebar and attach to menu open
-    $('.ui.sidebar')
-      .sidebar('attach events', '.toc.item')
-    ;
+  $(".show-enrollment-twins").click(function(e){
+    e.preventDefault();
+    $('.ui.modal.case-twins').modal('show');    
+  })        
 
-    $(".show-enrollment-case").click(function(e){
-      e.preventDefault();
-      $('.ui.modal.case-control').modal('show');    
-    })
+  $(".show-enrollment-microbiome").click(function(e){
+    e.preventDefault();
+    $('.ui.modal.case-microbiome').modal('show');    
+  })     
 
-    $(".show-enrollment-multi").click(function(e){
-      e.preventDefault();
-      $('.ui.modal.case-multi').modal('show');    
-    })    
+  $(".remove").click(function(e){
+    e.preventDefault();
+    $(".modal").modal('hide');
+  })             
 
-    $(".show-enrollment-african").click(function(e){
-      e.preventDefault();
-      $('.ui.modal.case-african').modal('show');    
-    })   
+  $(".join-study").click(function(){
+    window.open('https://redcap.ucsf.edu/surveys/?s=RPKGc4');
+  })
 
-    $(".show-enrollment-genes").click(function(e){
-      e.preventDefault();
-      $('.ui.modal.case-genes').modal('show');    
-    })   
+  $('.research-link').click(function(e){
+    e.preventDefault()
+    $('html, body').animate({
+      scrollTop: $("#" + this.classList[1]).offset().top - 80
+      },1000 );
+  })
 
-    $(".show-enrollment-pediatric").click(function(e){
-      e.preventDefault();
-      $('.ui.modal.case-pediatric').modal('show');    
-    })   
-
-    $(".show-enrollment-twins").click(function(e){
-      e.preventDefault();
-      $('.ui.modal.case-twins').modal('show');    
-    })        
-
-    $(".show-enrollment-microbiome").click(function(e){
-      e.preventDefault();
-      $('.ui.modal.case-microbiome').modal('show');    
-    })     
-
-    $(".remove").click(function(e){
-      e.preventDefault();
-      $(".modal").modal('hide');
-    })             
-
-    $(".join-study").click(function(){
-      window.open('https://redcap.ucsf.edu/surveys/?s=RPKGc4');
-    })
-
-    $('.research-link').click(function(e){
-      e.preventDefault()
-      $('html, body').animate({
-        scrollTop: $("#" + this.classList[1]).offset().top - 80
-        },1000 );
-    })
-
-  });
+});
 
