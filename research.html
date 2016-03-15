@@ -7,8 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <!-- Site Properties -->
+	<!-- Site Properties -->
   <title>MS Genetics</title>
+  <link rel="icon" href="favicon.ico?v=2" type="image/x-icon" />
+
+  <!-- Semantic UI -->
   <link rel="stylesheet" type="text/css" href="semantic/components/reset.css">
   <link rel="stylesheet" type="text/css" href="semantic/components/site.css">
 
@@ -38,7 +41,11 @@
   <script src="semantic/components/popup.js"></script>
   <script src="semantic/components/modal.js"></script>
 	<script src="semantic/components/dimmer.js"></script>  
+
+	<!-- Custom -->
 	<script src="js/custom.js"></script>
+	<script src="js/research.js"></script>
+
   <!-- google analytics -->
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -116,13 +123,14 @@
 					          <div class='ui list'>
 					          	<div class="item"><h4><a class='research-link case-control' href="#case-control">Case/Control Study</a></h4></div>
 					          	<div class="item"><h4><a class='research-link multi-case' href="#multi-case">Multi-Case Family Study</a></h4></div>
-					          	<div class="item"><h4><a class='research-link african' href="#african">African American Study</a></h4></div>
+					          	<div class="item"><a class='research-link quartet' href="#quartet"><h4>Quartet Study</h4></a></div>
+					          	<div class="item"><a class='research-link twins' href="#twins"><h4>Twins Study</h4></a></div>
 					          </div>
 					        </div>
 					        <div class="eight wide column">
 					          <div class='ui list'>
-					          	<div class="item"><a class='research-link twins' href="#twins"><h4>Twins Study</h4></a></div>
-					          	<div class="item"><a class='research-link quartet' href="#quartet"><h4>Quartet Study</h4></a></div>
+					          	<div class="item"><h4><a class='research-link arhms' href="#arhms">ARHMS (Alliance for Research in Hispanic MS) Study</a></h4></div>
+					          	<div class="item"><h4><a class='research-link african' href="#african">African American Study</a></h4></div>
 					          	<div class="item"><a class='research-link pediatric' href="#pediatric"><h4>Pediatric Study</h4></a></div>
 					          	<div class="item"><a class='research-link microbiome' href="#microbiome"><h4>Microbiome Study</h4></a></div>
 					          </div>
@@ -168,7 +176,7 @@
 						  		</div>							  		
 					  		<div class='ui grid centered'>
 					  			<div class="twelve wide column">
-						  			<h1 style='text-align: center; color: #db2828'> Case/Control Study </h1>
+						  			<h1 class='center' style='color: #db2828'> Case/Control Study </h1>
 						  			<h2> Enrollment Criteria </h2>
 						    		<p>	Participation in this study will require a one-time donation of a blood sample from the individual with MS and, if available, a control. The control cannot be a family member but can be a spouse or friend. Preferably the control will be of the same ethnicity and approximately the same age as the individual with MS. This is a nationwide study; participation does not require that you live near San Francisco, CA.</p>
 						    		<p><strong>PLEASE NOTE: To be eligible, controls must not have MS or a family history of any autoimmune disease</strong></p>
@@ -197,7 +205,7 @@
 						  		</div>							  		
 					  		<div class='ui grid centered'>
 					  			<div class="twelve wide column">
-						  			<h1 style='text-align: center; color: #db2828'>Multi-Case Family Study</h1>
+						  			<h1 class='center' style='color: #db2828'>Multi-Case Family Study</h1>
 						  			<h2> Enrollment Criteria </h2>
 						    		<p>We are asking for the donation of a blood sample from all affected siblings, unaffected siblings, and both parents. If not all of the individuals requested are able to participate, enrollment is still possible and will be discussed by phone.</p>
 						    		<h4>To participate or request additional information, please complete our brief <a href="https://redcap.ucsf.edu/surveys/?s=RPKGc4" target="_blanK">intake survey.</a></h4>
@@ -209,6 +217,62 @@
 					  	</div>
 						</div>
 					</div>	
+
+					<div class='twelve wide column'>
+						<h3 id="quartet">Quartet Study</h3>
+					</div>
+					<div class='twelve wide column'>
+						<p>This study focuses on families with one parent with MS, one parent without MS, and an affected child. Our goal is to identify and characterize heritability patterns of genetic variants linked to risk from the affected and unaffected parent to the affected child.</p>
+							
+							<p> <a href="#" class='show-enrollment-quartet'>Show Enrollment Criteria</a></p>
+
+							<div class="ui modal case-quartet" style="padding:20px">
+						  	<div class="contents">
+						  		<div class='sixteen wide column right aligned' style="text-align: right;">
+						  			<a href="#" style="color:initial"><i class="remove icon large"></i></a>
+						  		</div>							  		
+					  		<div class='ui grid centered'>
+					  			<div class="twelve wide column">
+						  			<h1 class='center' style='color: #db2828'>Quartet Study</h1>
+						  			<h2> Enrollment Criteria </h2>
+						    		<p>We are asking for the donation of a blood sample from the affected and unaffected parents, affected and unaffected siblings. If not all of the individuals requested are able to participate, enrollment is still possible and will be discussed by phone.</p>
+						    		<h4>To participate or request additional information, please complete our brief <a href="https://redcap.ucsf.edu/surveys/?s=RPKGc4" target="_blanK">intake survey.</a></h4>
+						    		<p>OR you may contact us directly:</p>
+										<p>Toll Free Phone: 1-866-MS-Genes or (1-866-674-3637) </p>
+										<p>Email: <a href="mailto:msdb@ucsf.edu">msdb@ucsf.edu</a></p>
+									</div>
+					  		</div>
+					  	</div>
+						</div>
+					</div>							
+
+					<div class='twelve wide column'>
+						<h3 id="arhms">ARHMS (Alliance for Research in Hispanic MS) Study</h3>
+					</div>
+					<div class='twelve wide column'>
+						<p>Despite MS now being increasingly diagnosed among the Hispanics and Latinos, few comprehensive studies exist. The ARHMS study is a newly formed consortium intended to bring scientists across multiple leading MS Centers with an interest in understanding the factors that drive MS risk and progression in the diverse US Hispanic population.</p>
+							
+						<p> <a href="#" class='show-enrollment-arhms'>Show Enrollment Criteria</a></p>
+
+						<div class="ui modal case-arhms" style="padding:20px">
+					  	<div class="contents">
+						  		<div class='sixteen wide column right aligned' style="text-align: right;">
+						  			<a href="#" style="color:initial"><i class="remove icon large"></i></a>
+						  		</div>							  		
+					  		<div class='ui grid centered'>
+					  			<div class="twelve wide column">
+						  			<h1 class='center' style='color: #db2828'>ARHMS (Alliance for Research in Hispanic MS) Study</h1>
+						  			<h2> Enrollment Criteria </h2>
+						    		<p>	For individuals self-identify as Hispanic, we are asking for the donation of a blood sample from the individual with MS and non-MS controls.</p>
+						    		<h4>To participate or request additional information, please complete our brief <a href="https://redcap.ucsf.edu/surveys/?s=RPKGc4" target="_blanK">intake survey.</a></h4>
+						    		<p>OR you may contact us directly:</p>
+										<p>Toll Free Phone: 1-866-MS-Genes or (1-866-674-3637) </p>
+										<p>Email: <a href="mailto:msdb@ucsf.edu">msdb@ucsf.edu</a></p>
+									</div>
+					  		</div>
+					  	</div>
+						</div>
+					</div>					
 
 					<div class='twelve wide column'>
 						<h3 id="african">African American Study</h3>
@@ -225,7 +289,7 @@
 						  		</div>							  		
 					  		<div class='ui grid centered'>
 					  			<div class="twelve wide column">
-						  			<h1 style='text-align: center; color: #db2828'>	African American Study</h1>
+						  			<h1 class='center' style='color: #db2828'>	African American Study</h1>
 						  			<h2> Enrollment Criteria </h2>
 						    		<p>	For individuals who are African American, we are asking for the donation of a blood sample from the individual with MS and non-MS controls. It is not required, but the participation of certain family members is preferred as well.</p>
 						    		<h4>To participate or request additional information, please complete our brief <a href="https://redcap.ucsf.edu/surveys/?s=RPKGc4" target="_blanK">intake survey.</a></h4>
@@ -253,37 +317,9 @@
 						  		</div>							  		
 					  		<div class='ui grid centered'>
 					  			<div class="twelve wide column">
-						  			<h1 style='text-align: center; color: #db2828'>Twins Study</h1>
+						  			<h1 class='center' style='color: #db2828'>Twins Study</h1>
 						  			<h2> Enrollment Criteria </h2>
 						    		<p>		For individuals who are monozygotic (identical) twins where at least one has MS, we are asking for blood donations from affected and unaffected twins as well as an unaffected sibling. If no unaffected sibling is available, an unaffected 1st cousin will be asked to participate instead.</p>
-						    		<h4>To participate or request additional information, please complete our brief <a href="https://redcap.ucsf.edu/surveys/?s=RPKGc4" target="_blanK">intake survey.</a></h4>
-						    		<p>OR you may contact us directly:</p>
-										<p>Toll Free Phone: 1-866-MS-Genes or (1-866-674-3637) </p>
-										<p>Email: <a href="mailto:msdb@ucsf.edu">msdb@ucsf.edu</a></p>
-									</div>
-					  		</div>
-					  	</div>
-						</div>
-					</div>		
-
-					<div class='twelve wide column'>
-						<h3 id="quartet">Quartet Study</h3>
-					</div>
-					<div class='twelve wide column'>
-						<p>(placeholder for quartet study) </p>
-							
-							<p> <a href="#" class='show-enrollment-quartet'>Show Enrollment Criteria</a></p>
-
-							<div class="ui modal case-quartet" style="padding:20px">
-						  	<div class="contents">
-						  		<div class='sixteen wide column right aligned' style="text-align: right;">
-						  			<a href="#" style="color:initial"><i class="remove icon large"></i></a>
-						  		</div>							  		
-					  		<div class='ui grid centered'>
-					  			<div class="twelve wide column">
-						  			<h1 style='text-align: center; color: #db2828'>Quartet Study</h1>
-						  			<h2> Enrollment Criteria </h2>
-						    		<p>	(placeholder)</p>
 						    		<h4>To participate or request additional information, please complete our brief <a href="https://redcap.ucsf.edu/surveys/?s=RPKGc4" target="_blanK">intake survey.</a></h4>
 						    		<p>OR you may contact us directly:</p>
 										<p>Toll Free Phone: 1-866-MS-Genes or (1-866-674-3637) </p>
@@ -307,7 +343,7 @@
 					</div>
 					<div class='twelve wide column'>
 						<p>The human body harbors more bacterial than human cells. Multiple families of these bacterial cells co-exist in a delicate equilibrium that is essential for maintaining a general state of well being. It has been recently shown that deviations from this equilibrium (caused by environmental effects, genetic causes or both) can result in disease. In this project we will study and compare the bacterial compositions present in the gut of MS patients at different stages of the disease and healthy individuals. These experiments will likely shed light on what are the beneficial and harmful microbial populations that associate with MS, and the possible mechanisms by which they can cause disease.</p>
-							<p> <a href="http://imsms.org/?page_id=21" target="_blank">For more information on how to participate, please visit the microbiome website.</a></p>							
+							<p> <a href="http://imsms.org/?page_id=227" target="_blank">For more information on how to participate, please visit the microbiome website.</a></p>							
 					</div>
 
 				</div>

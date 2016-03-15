@@ -9,6 +9,9 @@
 
   <!-- Site Properties -->
   <title>MS Genetics</title>
+  <link rel="icon" href="favicon.ico?v=2" type="image/x-icon" />
+
+  <!-- Semantic UI -->
   <link rel="stylesheet" type="text/css" href="semantic/components/reset.css">
   <link rel="stylesheet" type="text/css" href="semantic/components/site.css">
 
@@ -29,7 +32,6 @@
   <link rel="stylesheet" type="text/css" href="semantic/components/popup.css">
   <link rel="stylesheet" type="text/css" href="semantic/components/modal.css">
   <link rel="stylesheet" type="text/css" href="semantic/components/dimmer.css">
-  <link rel="stylesheet" type="text/css" href="css/custom.css">
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -38,11 +40,17 @@
   <script src="semantic/components/transition.js"></script>
   <script src="semantic/components/popup.js"></script>
   <script src="semantic/components/modal.js"></script>
-	<script src="semantic/components/dimmer.js"></script>  
-  <script src="js/spin.js"></script>
-  <script src="js/jquery.collagePlus.js"></script>
-  <script src="js/custom.js"></script>
+  <script src="semantic/components/dimmer.js"></script>  
+  <script src="slideshow/pgwslideshow.min.js"></script>
+
+  <!-- Slideshow -->
+  <link rel="stylesheet" type="text/css" href="slideshow/pgwslideshow.min.css">
+
+  <!-- Custom -->
   <script src="js/our_lab.js"></script>
+  <script src="js/custom.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+
   <!-- google analytics -->
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -53,85 +61,79 @@
   ga('create', 'UA-72792729-1', 'auto');
   ga('send', 'pageview');
 
-</script>	
+</script> 
 </head>
 <body>
-        <div id="spinner" >
-        </div>
-
-	<!-- Following Menu -->
-	<div class="ui huge top fixed hidden menu following">
-	  <div class="ui container">
-	    <a class="item tabbed about-tab" href="index.html">About</a>
+  <!-- Following Menu -->
+  <div class="ui huge top fixed hidden menu following">
+    <div class="ui container">
+      <a class="item tabbed about-tab" href="index.html">About</a>
       <a class="item tabbed research-tab" href="research.html">Research</a>
       <a class="item tabbed participate-tab" href="participate.html">Participate</a>
-	    <a class="item tabbed publications-tab" href="publications.html">Publications</a>
-<!-- 	    <a class="item tabbed newsletter-tab">Newsletter</a>
-			<a class="item tabbed links-tab">Links</a>     -->
-			<a class="item tabbed resources-tab" href="resources.html">Scientist Resources</a>
-      <a class="active item tabbed our-lab-tab" href="our_lab.html">Our Lab</a>            		
-	  </div>
-	</div>
+      <a class="item tabbed publications-tab" href="publications.html">Publications</a>
+      <a class="item tabbed resources-tab" href="resources.html">Scientist Resources</a>
+      <a class="active item tabbed our-lab-tab" href="our_lab.html">Our Lab</a>               
+    </div>
+  </div>
 
-	<!-- Sidebar Menu -->
-	<div class="ui vertical inverted sidebar menu">
+  <!-- Sidebar Menu -->
+  <div class="ui vertical inverted sidebar menu">
     <a class="item tabbed about-tab" href="about.html">About</a>
     <a class="item tabbed research-tab" href="research.html">Research</a>
     <a class="item tabbed participate-tab" href="participate.html">Participate</a>
     <a class="item tabbed publications-tab" href="publications.html">Publications</a>
-<!--     <a class="item tabbed newsletter-tab">Newsletter</a>
-		<a class="item tabbed links-tab">Links</a>    --> 
-		<a class="item tabbed resources-tab" href="resources.html">Scientist Resources</a>	
+    <a class="item tabbed resources-tab" href="resources.html">Scientist Resources</a>  
     <a class="active item tabbed our-lab-tab" href="our_lab.html">Our Lab</a>             
-	</div>
+  </div>
 
 
-	<!-- Page Contents -->
-	<div class="pusher" style="background-color: #FEFFFA">
+  <!-- Page Contents -->
+  <div class="pusher" style="background-color: #FEFFFA">
 
-			<div class='content publications-tab-content'>
-			  <div class="ui container">
-		      <div class="ui huge secondary pointing menu plain-menu masthead pointing" style= "border: none">
-		        <a class="toc item">
-		          <i class="sidebar icon"></i>
-		        </a>
-				    <a class="item tabbed about-tab" href="index.html">About</a>
+      <div class='content publications-tab-content'>
+        <div class="ui container">
+          <div class="ui huge secondary pointing menu plain-menu masthead pointing" style= "border: none">
+            <a class="toc item">
+              <i class="sidebar icon"></i>
+            </a>
+            <a class="item tabbed about-tab" href="index.html">About</a>
             <a class="item tabbed research-tab" href="research.html">Research</a>
             <a class="item tabbed participate-tab" href="participate.html">Participate</a>
-				    <a class="item tabbed publications-tab" href="publications.html">Publications</a>
-<!-- 				    <a class="item tabbed newsletter-tab">Newsletter</a> -->
-<!-- 						<a class="item tabbed links-tab">Useful Links</a> -->    
-						<a class="item tabbed resources-tab" href="resources.html">Scientist Resources</a>	
-            <a class="active item tabbed our-lab-tab" href="our_lab.html">Our Lab</a>                 	
-		      </div>
-		    </div>
-        <div class="ui grid red segment centered" style="margin-top: 3em">
-          <br>    
-          <p style="font-size: 1.33em">Some of the many people helping us better understand multiple sclerosis. </p>
-          <br>    
+            <a class="item tabbed publications-tab" href="publications.html">Publications</a>   
+            <a class="item tabbed resources-tab" href="resources.html">Scientist Resources</a>  
+            <a class="active item tabbed our-lab-tab" href="our_lab.html">Our Lab</a>                   
+          </div>
         </div>
-        <div class="Collage effect-parent" id="collage">
-            <img src="images/collage/jorge.JPG" width="497" height="330">    
-            <img src="images/collage/alessandro.JPG" width="497" height="330">
-            <img src="images/collage/leena_sneha.JPG" width="497" height="330">
-            <img src="images/collage/barcoding.png" width="497" height="330">
-            <img src="images/collage/ester01.JPG" width="497" height="330">                        
-            <img src="images/collage/dataentry.png" width="497" height="330">    
-            <img src="images/collage/houri.jpg" width="497" height="330">
-            <img src="images/collage/rosa.png" width="497" height="330">
-            <img src="images/collage/alessandro01.JPG" width="497" height="330">
-            <img src="images/collage/hauser.JPG" width="497" height="330" >
-            <img src="images/collage/microscope.png" width="497" height="330">   
-            <img src="images/collage/bioscreen.JPG" width="497" height="330">   
-            <img src="images/collage/robot.png" width="497" height="330">
-            <img src="images/collage/rosahouri.png" width="497" height="330">
-            <img src="images/collage/ester.JPG" width="497" height="330">
-            <img src="images/collage/scanner.jpg" width="497" height="330">
-            <img src="images/collage/team.JPG" width="497" height="330">
+        <div class='ui grid'>
+          <div class='fourteen wide column centered'>
+            <div class='sixteen wide column' style="margin-top: 3em">
+              <div class="ui grid red segment centered">
+                <br>    
+                <p style="font-size: 1.33em">Some of the many people helping us better understand multiple sclerosis. </p>
+                <br>    
+              </div>
+              <ul class='pgwSlideshow'>
+                <li><img src="images/collage/ester01.JPG" alt= "Dr. Puig preparing a collection of assays"></li>
+                <li><img src="images/collage/jorge.JPG" alt="Dr. Oksenberg presenting to patients at a multiple sclerosis patient day" ></li>
+                <li><img src="images/collage/alessandro.JPG" alt="Dr. Didonna working at the bench"></li>
+                <li><img src="images/collage/leena_sneha.JPG" alt= "Leena and Sneha discussing patient scheduling and coordination"></li>
+                <li><img src="images/collage/dataentry.png" alt="Research coordinators entering participant data"></li>
+                <li><img src="images/collage/rosa.png" alt="Rosa aliquots samples to store in the repository"></li>
+                <li><img src="images/collage/hauser.JPG" alt="Dr. Hauser presenting to patients at a multiple sclerosis patient day"  ></li>
+                <li><img src="images/collage/alessandro01.JPG" alt="Dr. Didonna pipetting at the bench"></li>
+                <li><img src="images/collage/bioscreen.JPG" alt="A team picture of all the members of the MS Bioscreen project"></li>
+                <li><img src="images/collage/rosahouri.png" alt="Lab technicians Rosa and Hourieh aliquotting"></li>
+                <li><img src="images/collage/ester.JPG" alt="Dr. Puig preparing a collection of assays"></li>
+                <li><img src="images/collage/scanner.jpg" alt="Image of an MRI scanner used on site"></li>
+                <li><img src="images/collage/team.JPG" alt="Dr. Henry, Dr. Cree, Dr. Green, Dr. Oksenberg, and Dr. Baranzini answer questions asked at the multiple sclerosis patient day"></li>
+              </ul>
+            </div>
+          </div>
         </div>
-			</div> <!-- end of publications -->
 
-		</div> <!-- end of pusher -->
+      </div> <!-- end of publications -->
+
+    </div> <!-- end of pusher -->
 
 
   <div class="ui inverted vertical footer segment">
