@@ -31,7 +31,7 @@ $(document).ready(function(){
 
   $(".show-enrollment-arhms").click(function(e){
     e.preventDefault();
-    $('.ui.modal.case-twins').modal('show');    
+    $('.ui.modal.case-arhms').modal('show');    
   })          
 
   $(".remove").click(function(e){

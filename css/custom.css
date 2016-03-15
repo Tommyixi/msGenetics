@@ -4,6 +4,9 @@
 .center{
   text-align: center;
 }
+.right{
+  text-align: right;
+}
 .pusher{
   background-color: #FEFFFA !important;
 }
@@ -30,7 +33,6 @@
   font-size: 1.7em;
   font-weight: normal;
 }
-
 .ui.vertical.stripe {
   padding: 4em 0em;
 }
@@ -50,7 +52,6 @@
 .ui.vertical.stripe .horizontal.divider {
   margin: 3em 0em;
 }
-
 .quote.stripe.segment {
   padding: 0em;
 }
@@ -58,42 +59,32 @@
   padding-top: 5em;
   padding-bottom: 5em;
 }
-
 .footer.segment {
   padding: 5em 0em;
 }
-
 .secondary.pointing.menu .toc.item {
   display: none;
 }
-
 .bulleted .item, h4{
   font-size: 1.33em;
 }
 .one-point-two-five{
   font-size: 1.25em;
 }
-
 .margin-bottom{
   margin-bottom: 8em !important;
 }
-
-.Collage {
-  padding: 10px;
+.color-red{
+  color: #db2828;
 }
-
-.Collage img {
-  vertical-align: bottom;
-  opacity: 0;
-  max-width: 100%
-}
-#spinner{
-  position:absolute;
-  left: 50%;
-  top:25%;
+.color-initial, .color-initial:hover{
+  color: initial;
 }
 .pgwSlideshow{
   margin-top:1em;
+}
+.modal {
+  padding: 20px;
 }
 
 @media only screen and (max-width: 700px) {

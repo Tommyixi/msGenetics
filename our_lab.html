@@ -47,9 +47,8 @@
   <link rel="stylesheet" type="text/css" href="slideshow/pgwslideshow.min.css">
 
   <!-- Custom -->
-  <script src="js/our_lab.js"></script>
-  <script src="js/custom.js"></script>
   <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <script src="js/custom.js"></script>
 
   <!-- google analytics -->
   <script>
@@ -109,7 +108,7 @@
             <div class='sixteen wide column' style="margin-top: 3em">
               <div class="ui grid red segment centered">
                 <br>    
-                <p style="font-size: 1.33em">Some of the many people helping us better understand multiple sclerosis. </p>
+                <p style="font-size: 1.33em">Some of the many people helping us better understand multiple sclerosis</p>
                 <br>    
               </div>
               <ul class='pgwSlideshow'>
@@ -161,6 +160,11 @@
       </div>
     </div>
   </div>
+  <script>
+  $(document).ready(function() {
+    $('.pgwSlideshow').pgwSlideshow();
+  });
+  </script>
 </body>
 
 </html>
