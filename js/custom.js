@@ -24,20 +24,15 @@ $(document).ready(function() {
     $('.ui.modal.case-genes').modal('show');    
   })   
 
-  $(".show-enrollment-pediatric").click(function(e){
+  $(".show-enrollment-quartet").click(function(e){
     e.preventDefault();
-    $('.ui.modal.case-pediatric').modal('show');    
+    $('.ui.modal.case-quartet').modal('show');    
   })   
 
   $(".show-enrollment-twins").click(function(e){
     e.preventDefault();
     $('.ui.modal.case-twins').modal('show');    
   })        
-
-  $(".show-enrollment-microbiome").click(function(e){
-    e.preventDefault();
-    $('.ui.modal.case-microbiome').modal('show');    
-  })     
 
   $(".remove").click(function(e){
     e.preventDefault();
@@ -54,6 +49,7 @@ $(document).ready(function() {
       scrollTop: $("#" + this.classList[1]).offset().top - 80
       },1000 );
   })
+  
 
 });
 
