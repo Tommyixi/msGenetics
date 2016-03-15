@@ -1,3 +1,9 @@
+.justify{
+  text-align: justify;
+}
+.center{
+  text-align: center;
+}
 .pusher{
   background-color: #FEFFFA !important;
 }
@@ -89,30 +95,6 @@
 .pgwSlideshow{
   margin-top:1em;
 }
-
-img{
-  width:"497";
-   height:"330"  
-}
-
-width="497" height="330"
-width="497" height="330"
-width="497" height="330"
-width="497" height="330"
-width="497" height="330"
-width="497" height="330"
-width="497" height="330"
-width="497" height="330"
-width="497" height="330"
-width="497" height="330"
-width="497" height="330"
-width="497" height="330"
-width="497" height="330"
-width="497" height="330"
-width="497" height="330"
-width="497" height="330"
-width="497" height="330"
-width="497" height="330"
 
 @media only screen and (max-width: 700px) {
   .ui.fixed.menu {
