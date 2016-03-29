@@ -3,6 +3,6 @@ $(document).ready(function() {
     .sidebar('attach events', '.toc.item')
   ;
   $(".join-study").click(function(){
-    window.open('https://redcap.ucsf.edu/surveys/?s=RPKGc4');
+    window.open('https://redcap.ucsf.edu/surveys/?s=849FYFLPA7');
   })
 });
